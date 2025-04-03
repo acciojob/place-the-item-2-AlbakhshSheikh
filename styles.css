@@ -1,2 +1,38 @@
+/* styles.css */
 
-/* Your CSS Code here. */
+/* Style for the holder container */
+.holder {
+  display: flex; /* Enable Flexbox */
+  flex-direction: row; /* Arrange items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next row if they don't fit */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 0; /* Ensure no gaps between items, making them appear "squashed together" */
+  width: 100%; /* Ensure the holder takes full width */
+  min-height: 200px; /* Give the holder some height to see the vertical centering */
+  border: 1px solid black; /* Optional: to visualize the container */
+}
+
+/* Style for the child items (boxes) */
+.item {
+  width: 100px; /* Fixed width for each item */
+  height: 100px; /* Fixed height for each item */
+  display: flex; /* To center the text inside the item */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  font-size: 24px; /* Size of the numbers */
+  color: white; /* Text color */
+}
+
+/* Specific colors for each item based on the images */
+.item:nth-child(1) {
+  background-color: red; /* Item 1 is red */
+}
+
+.item:nth-child(2) {
+  background-color: blue; /* Item 2 is blue */
+}
+
+.item:nth-child(3) {
+  background-color: green; /* Item 3 is green */
+}
